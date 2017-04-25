@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<head>
+		<title>Stats Test Page</title>
+		<!-- <script src="statsscript.js"></script> -->
+		<!-- <link rel="stylesheet" type="text/css" href="statscss.css"> -->
+		<link rel="icon" href="images.ico" type="image/x-icon">
+		<style> 
+		.leftcol {
+			position: absolute;
+			margin: 0 0 0 15px;
+			width: 200px;
+			text-align: left;
+		}
+		
+		.centercol {
+			position: absolute;
+			margin: 0 0 0 230px;
+			text-align: left;
+		}
+		
+		.statval {
+			width: 50px;
+			font-size: x-large;
+			text-align: center;
+			background-color: #BDF;
+			margin: 10px 0 10px 0;
+		}
+		
+		.incdec {
+			width: 50px;
+			font-size: x-large;
+			text-align: center;
+		}
+		
+		ul.statcol {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		
+		li.statcol {
+			margin: 0 10px 0 10px;
+			float: left;
+			background-color: #DEF;
+			text-align:center;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="leftcol">
+			<p>This is a stats page left column</p>				
+		</div>
+		<div class="centercol">
+			<p>This is the stats center area</p>
+			<br />
+			<ul class="statcol">	
+				<li class="statcol">
+					<p>HP</p>
+					<button id="HPplus" onclick="HPplus()" class="incdec">+</button>
+					<div id="HP" class="statval">0</div>
+					<button id="HPminus" onclick="HPminus()" class="incdec">-</button>
+				</li>
+				<li class="statcol">
+					<p>AC</p>
+					<button id="ACplus" onclick="ACplus()">+</button>
+					<button id="ACminus" onclick="ACminus()">-</button>
+					<div id="AC" class="statval">0</div>
+				</li>
+				<li class="statcol">
+					<p>ATK</p>
+					<button id="ATKplus" onclick="ATKplus()">+</button>
+					<button id="ATKminus" onclick="ATKminus()">-</button>
+					<div id="ATK" class="statval">0</div>
+				</li>
+				<li class="statcol">
+					<p>SP</p>
+					<button id="SPplus" onclick="SPplus()">+</button>
+					<button id="SPminus" onclick="SPminus()">-</button>
+					<div id="SP" class="statval">0</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			function HPplus(){
+				//pull in value
+				var HPval = document.getElementById("HP").innerHTML
+				
+				//increment value
+				HPval++;
+				
+				//set new value on page
+				document.getElementById("HP").innerHTML = HPval;
+			}
+			
+			function HPminus(){
+				//pull in value
+				var HPval = document.getElementById("HP").innerHTML
+				
+				//increment value
+				HPval--;
+				
+				//set new value on page
+				document.getElementById("HP").innerHTML = HPval;
+			}
+			
+			function ACplus(){
+				//pull in value
+				var ACval = document.getElementById("AC").innerHTML
+				
+				//increment value
+				ACval++;
+				
+				//set new value on page
+				document.getElementById("AC").innerHTML = ACval;
+			}
+			
+			function ACminus(){
+				//pull in value
+				var ACval = document.getElementById("AC").innerHTML
+				
+				//increment value
+				ACval--;
+				
+				//set new value on page
+				document.getElementById("AC").innerHTML = ACval;
+			}
+			
+			function ATKplus(){
+				//pull in value
+				var ATKval = document.getElementById("ATK").innerHTML
+				
+				//increment value
+				ATKval++;
+				
+				//set new value on page
+				document.getElementById("ATK").innerHTML = ATKval;
+			}
+			
+			function ATKminus(){
+				//pull in value
+				var ATKval = document.getElementById("ATK").innerHTML
+				
+				//increment value
+				ATKval--;
+				
+				//set new value on page
+				document.getElementById("ATK").innerHTML = ATKval;
+			}
+			
+			function SPplus(){
+				//pull in value
+				var SPval = document.getElementById("SP").innerHTML
+				
+				//increment value
+				SPval++;
+				
+				//set new value on page
+				document.getElementById("SP").innerHTML = SPval;
+			}
+			
+			function SPminus(){
+				//pull in value
+				var SPval = document.getElementById("SP").innerHTML
+				
+				//increment value
+				SPval--;
+				
+				//set new value on page
+				document.getElementById("SP").innerHTML = SPval;
+			}
+			
+		</script>
+	</body>
+</html>

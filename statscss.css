@@ -1,0 +1,40 @@
+.leftcol {
+	position: absolute;
+	margin: 0 0 0 15px;
+	width: 200px;
+	text-align: left;
+}
+
+.centercol {
+	position: absolute;
+	margin: 0 0 0 230px;
+	text-align: left;
+}
+
+.statval {
+	width: 50px;
+	font-size: x-large;
+	text-align: center;
+	background-color: #BDF;
+	margin: 10px 0 10px 0;
+}
+
+.incdec {
+	width: 50px;
+	font-size: x-large;
+	text-align: center;
+}
+
+ul.statcol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li.statcol {
+	margin: 0 10px 0 10px;
+	float: left;
+	background-color: #DEF;
+	text-align:center;
+}
